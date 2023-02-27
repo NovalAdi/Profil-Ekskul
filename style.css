@@ -1,0 +1,216 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-primary: #3a8dd2;
+    --color-bg1: #e5e5e5;
+    --color-bg2: #f1f3ff;
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: var(--color-bg2);
+}
+
+a {
+    color: black;
+}
+
+/* nav */
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(250, 250, 250, 0.6);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+/* end nav */
+
+/* header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-background {
+    background-image: url("https://backpanel.kemlu.go.id/PublishingImages/Jeddah-Foto%20Berita/IMG_20191125_093022.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    height: 100%;
+    width: 100%;
+}
+
+.content-header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.content-header a {
+    display: inline-block;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    margin-top: 3rem;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 100px;
+    transition: var(--transition);
+}
+
+.content-header a:hover {
+    scale: 1.3;
+}
+
+/* end header */
+
+/* pengurus */
+.pengurus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.pengurus h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 80px;
+}
+
+.pengurus span {
+    color: var(--color-primary);
+}
+
+.container-pengurus {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 80px;
+    width: 80%;
+}
+
+.card-pengurus {
+    background-color: var(--color-bg1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.img-pengurus {
+    height: 350px;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-pengurus img {
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/* end pengurus */
+
+/* ekskul */
+.ekskul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-bg1);
+}
+
+.ekskul h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.ekskul span {
+    color: var(--color-primary);
+}
+
+.container-ekskul {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+.content-ekskul {
+    display: flex;
+    gap: 100px;
+}
+
+.img-ekskul {
+    height: 350px;
+    width: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-ekskul img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.text-content i {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+/* end ekskul */
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+/* end footer */
